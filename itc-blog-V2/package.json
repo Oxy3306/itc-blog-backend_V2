@@ -1,0 +1,24 @@
+{
+  "name": "itc-blog-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "REST API for the ITC Club blog: articles, authors, and the peer-review workflow",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/server.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch src/server.js",
+    "seed": "node --disable-warning=ExperimentalWarning src/seed.js",
+    "make-admin": "node --disable-warning=ExperimentalWarning src/make-admin.js",
+    "test": "node --disable-warning=ExperimentalWarning --test",
+    "backup": "node --disable-warning=ExperimentalWarning src/backup.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "pdfkit": "^0.20.2"
+  }
+}
